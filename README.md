@@ -114,6 +114,17 @@ TradeCategorization/
 - **POST /api/user/login**: Authenticate and receive a JWT token.
 - **POST /api/trade/categorize**: Categorize trades. Requires a Bearer token for authorization.
 
+- ### Test Values
+
+You can use the following test values to verify the functionality of the application:
+
+```csharp
+new Trade { Value = 2000000, ClientSector = "Private" },
+new Trade { Value = 400000, ClientSector = "Public" },
+new Trade { Value = 500000, ClientSector = "Public" },
+new Trade { Value = 3000000, ClientSector = "Public" }
+```
+
 ### Additional Documentation
 
 Detailed API documentation can be found in the Postman collection available at `docs/TradeCategorization.postman_collection.json`.
