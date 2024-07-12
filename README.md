@@ -1,4 +1,3 @@
-﻿```markdown
 # Trade Categorization API
 
 This project provides an API for categorizing trades based on specific rules. The solution is built using .NET 8, follows the DDD pattern, and includes JWT authentication for securing the endpoints.
