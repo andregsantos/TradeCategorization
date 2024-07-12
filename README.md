@@ -141,6 +141,8 @@ The project includes a GitHub Actions workflow for CI/CD. The workflow:
 
 The workflow file is located at `.github/workflows/deploy.yml`.
 
+You can run application at `https://tradecategorization.azurewebsites.net/swagger/index.html`.
+
 ## Contribution
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
