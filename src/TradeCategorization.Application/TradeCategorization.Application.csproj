@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradeCategorization.Domain\TradeCategorization.Domain.csproj" />
+    <ProjectReference Include="..\TradeCategorization.Infrastructure\TradeCategorization.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

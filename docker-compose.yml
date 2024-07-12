@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "Senha@344550"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+
+  tradecategorizationapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tradecategorizationapi
+    environment:
+      DefaultConnection: "Server=sqlserver;Database=TradeCategorization;User Id=sa;Password=Senha@344550;"
+      DOTNET_ENVIRONMENT: "Production"
+      JWT_KEY: "3DAA9B05206964019C7C08A344095843C6B1A8974F902B04063A494B"
+      JWT_ISSUER: "trade"
+    ports:
+      - "8080:3594"
+    depends_on:
+      - sqlserver
+
+volumes:
+  sqlserverdata:
