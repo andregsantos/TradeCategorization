@@ -127,7 +127,7 @@ new Trade { Value = 3000000, ClientSector = "Public" }
 
 ### Additional Documentation
 
-Detailed API documentation can be found in the Postman collection available at `docs/TradeCategorization.postman_collection.json`.
+Detailed API documentation can be found in the Postman collection available at `https://documenter.getpostman.com/view/2508366/2sA3e5f8bw`.
 
 ## Testing
 
